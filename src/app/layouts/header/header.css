@@ -1,0 +1,31 @@
+.sidenav-container {
+  height: 100vh;
+  background-color: rgb(63, 18, 160);
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.desktop-menu {
+  display: flex;
+  gap: 16px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .desktop-menu {
+    display: none;
+  }
+  .menu-button {
+    display: inline-flex;
+  }
+}

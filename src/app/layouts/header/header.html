@@ -1,0 +1,30 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav mode="over" class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/">Accueil</a>
+      <a mat-list-item routerLink="/services">Achats</a>
+      <a mat-list-item routerLink="/contact">Mentions Légales</a>
+      <a mat-list-item routerLink="/contact">CGV</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button mat-icon-button (click)="sidenav.toggle()" class="menu-button">
+        <mat-icon>menu</mat-icon>
+      </button>
+      <img src="assets/imgs/5_rings_olympics.png" alt="Olympic Rings" height="50px" width="100px" />
+      <span class="spacer"></span>
+      <nav class="desktop-menu">
+        <a mat-button routerLink="/">Accueil</a>
+        <a mat-button routerLink="/services">Achats</a>
+        <a mat-button routerLink="/contact">Mentions Légales</a>
+        <a mat-button routerLink="/contact">CGV</a>
+      </nav>
+    </mat-toolbar>
+
+    <div class="content">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

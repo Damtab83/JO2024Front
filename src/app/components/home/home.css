@@ -1,0 +1,8 @@
+.main-container {
+  background-image: url('../../../assets/imgs/JO2024-eiffel.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 85vh;
+  margin-top: 2vh;
+}
