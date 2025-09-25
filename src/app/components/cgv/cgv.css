@@ -1,0 +1,35 @@
+.content-page {
+  background-color: rgb(219, 219, 54);
+  border-radius: 10px;
+  margin: 2%;
+  padding: 2px;
+  color: white;
+}
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2px 0 2vh 0;
+  text-shadow: 2px 2px 2px black;
+}
+.article {
+  padding: 1.5%;
+  background-color: rgb(5, 110, 5);
+  margin: 4px 2vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(59, 56, 56);
+}
+.society-name {
+  background-color: rgb(5, 110, 5);
+  margin: 4px 3vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(59, 56, 56);
+  padding: 1.5%;
+}
+.nota-bene {
+  background-color: rgb(5, 110, 5);
+  margin: 4px 4vw;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px rgb(59, 56, 56);
+  padding: 1.5%;
+}

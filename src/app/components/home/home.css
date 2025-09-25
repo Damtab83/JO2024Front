@@ -6,3 +6,23 @@
   height: 85vh;
   margin-top: 2vh;
 }
+
+.image-field {
+  display: flex;
+  margin: 5vw;
+}
+
+blockquote {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.3rem;
+  margin-top: 25px;
+  text-align: center;
+}
+
+blockquote p {
+  margin: 4px;
+}
+
+.translate {
+  padding: 0 0 2vh 3vh;
+}
