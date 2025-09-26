@@ -6,7 +6,7 @@ import { MentionsLegales } from './components/mentions-legales/mentions-legales'
 
 export const routes: Routes = [
   { path: '', component: Home },
-  { path: 'home', redirectTo: '', pathMatch: 'full' },
+  { path: 'home', component: Home, pathMatch: 'full' },
   { path: 'cgv', component: CGV },
   { path: 'mentions-legales', component: MentionsLegales },
   { path: '**', component: NotFound },
