@@ -4,8 +4,6 @@ import { Component } from '@angular/core';
   selector: 'jo2024-home',
   imports: [],
   templateUrl: './home.html',
-  styleUrl: './home.css'
+  styleUrl: './home.css',
 })
-export class Home {
-
-}
+export class Home {}
