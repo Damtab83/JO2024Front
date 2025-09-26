@@ -9,5 +9,5 @@ export const routes: Routes = [
   { path: 'home', component: Home, pathMatch: 'full' },
   { path: 'cgv', component: CGV },
   { path: 'mentions-legales', component: MentionsLegales },
-  { path: '**', component: NotFound },
+  { path: '**', component: Home },
 ];
