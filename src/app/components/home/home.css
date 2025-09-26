@@ -35,4 +35,7 @@ blockquote p {
   .penta {
     display: none;
   }
+  .main-container {
+    background-size: contain;
+  }
 }

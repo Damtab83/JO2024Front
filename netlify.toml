@@ -2,8 +2,6 @@
   command = "npm run build"
   publish = "dist/jo2024Front/browser"
 
-[[plugins]]
-  package = "@netlify/angular-runtime"
 
 # 🔄 Redirections pour Angular SPA
 [[redirects]]
