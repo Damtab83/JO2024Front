@@ -1,0 +1,15 @@
+<h1>Achats des Billets</h1>
+<div class="card-container">
+  <mat-card *ngFor="let formula of formulas" class="formula-card" appearance="outlined">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ formula.title }}</mat-card-title>
+        <mat-card-subtitle>{{ formula.price }}</mat-card-subtitle>
+        <img mat-card-md-image src="assets/imgs/tickets.jpg" alt="Tickets" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content>
+      {{ formula.description }}
+    </mat-card-content>
+  </mat-card>
+</div>
