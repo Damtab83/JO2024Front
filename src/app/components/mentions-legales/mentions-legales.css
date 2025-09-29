@@ -1,0 +1,23 @@
+.container-mentions {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.editing-point {
+  background-color: yellow;
+  margin: 1.5vh 5vw;
+  padding: 2% 3%;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px white;
+}
+
+h1 {
+  color: beige;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  margin: 2vh auto 5vh;
+}
+h6 {
+  color: white;
+  margin: 2%;
+}
