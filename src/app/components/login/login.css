@@ -1,0 +1,21 @@
+.form-container {
+  background-color: beige;
+  margin: 10vh 20vw;
+  height: 60vh;
+  width: auto;
+  border-radius: 15px;
+  box-shadow: 3px 3px 3px rgb(68, 46, 46);
+}
+.input-field {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  padding-top: 10vh;
+  margin: 0 auto;
+}
+
+.button-field {
+  display: flex;
+  justify-content: center;
+  margin: 5vh auto;
+}
