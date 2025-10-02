@@ -18,4 +18,12 @@
   display: flex;
   justify-content: center;
   margin: 5vh auto;
+  box-shadow: 3px 3px 3px grey;
+}
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: underline;
+  margin-top: 4vh;
 }

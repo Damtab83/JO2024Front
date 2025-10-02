@@ -1,1 +1,36 @@
-<p>signin works!</p>
+<h1>Création compte</h1>
+<div class="login-container">
+  <form class="form-container" [formGroup]="form" (ngSubmit)="onSubmit()">
+    <mat-form-field class="input-field">
+      <mat-label>Enter your firstname</mat-label>
+      <input matInput placeholder="firstname" formControlName="firstname" required />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label>Enter your lastname</mat-label>
+      <input matInput placeholder="lastname" formControlName="lastname" required />
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="pat@example.com" formControlName="email" required />
+      @if (form.controls.email.invalid && form.get('email')?.touched) {
+      <mat-error>{{ errorMessage() }}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field class="input-field">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide() ? 'password' : 'text'" formControlName="password" required />
+      <button
+        mat-icon-button
+        matSuffix
+        (click)="clickEvent($event)"
+        [attr.aria-label]="'Hide password'"
+        [attr.aria-pressed]="hide()"
+        type="button"
+      >
+        <mat-icon>{{ hide() ? 'visibility_off' : 'visibility' }}</mat-icon>
+      </button>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" class="button-field">Connexion</button>
+  </form>
+</div>
