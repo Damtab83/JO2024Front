@@ -1,0 +1,23 @@
+<h1>Panneau Administratif</h1>
+<h3>Bonjour {{ user.nom }} {{ user.prenom }}</h3>
+<div class="custom-admin-container">
+  <div class="designation-person">
+    <span>{{ user.nom }}</span>
+    <span>{{ user.prenom }}</span>
+    <span>{{ user.email }}</span>
+    <span>{{ user.password }}</span>
+  </div>
+  <div class="listing-ticket">
+    <table>
+      <tr>
+        <th>Numéro</th>
+        <th>QRcode</th>
+      </tr>
+
+      <tr *ngFor="let ticket of tickets">
+        <td>{{ ticket.numero }}</td>
+        <td>{{ ticket.qrcode }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

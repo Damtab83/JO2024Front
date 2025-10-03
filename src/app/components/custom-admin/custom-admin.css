@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 1.5rem;
+  margin-top: 4vh;
+}
+
+.h3 {
+  text-align: center;
+  text-decoration: underline;
+  color: white;
+  font-size: 1rem;
+  margin-top: 4vh;
+}
+
+.custom-admin-container {
+  width: 80vw;
+  margin: auto;
+}
+
+.listing-ticket {
+  box-shadow: 2px 2px 2px darkmagenta;
+  background-color: rgb(235, 89, 89);
+}
+
+.designation-person {
+  background-color: aqua;
+  box-shadow: 2px 2px 2px grey;
+  margin: 3vh auto;
+}
+span {
+  display: flex;
+}
+
+h3 {
+  color: white;
+  margin-left: 15vw;
+  margin-top: 4vh;
+}

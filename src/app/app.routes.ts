@@ -5,6 +5,7 @@ import { MentionsLegales } from './components/mentions-legales/mentions-legales'
 import { Achats } from './components/achats/achats';
 import { Login } from './components/login/login';
 import { Signin } from './components/signin/signin';
+import { CustomAdmin } from './components/custom-admin/custom-admin';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -13,6 +14,7 @@ export const routes: Routes = [
   { path: 'login', component: Login },
   { path: 'signin', component: Signin },
   { path: 'achats', component: Achats },
+  { path: 'custom-admin', component: CustomAdmin },
   { path: 'mentions-legales', component: MentionsLegales },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
