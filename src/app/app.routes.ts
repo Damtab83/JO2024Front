@@ -6,6 +6,9 @@ import { Achats } from './components/achats/achats';
 import { Login } from './components/login/login';
 import { Signin } from './components/signin/signin';
 import { CustomAdmin } from './components/custom-admin/custom-admin';
+import { ManagementDashboardAdmin } from './components/admin/management-dashboard-admin/management-dashboard-admin';
+import { ManagementDashboardAdminCustom } from './components/admin/management-dashboard-admin-custom/management-dashboard-admin-custom';
+import { NotFound } from './components/not-found/not-found';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -15,6 +18,14 @@ export const routes: Routes = [
   { path: 'signin', component: Signin },
   { path: 'achats', component: Achats },
   { path: 'custom-admin', component: CustomAdmin },
+  {
+    path: 'management-dashboard-admin',
+    component: ManagementDashboardAdmin,
+    children: [{ path: 'custom/:id', component: ManagementDashboardAdminCustom }],
+  },
   { path: 'mentions-legales', component: MentionsLegales },
-  { path: '**', redirectTo: '', pathMatch: 'full' },
+  {
+    path: '**',
+    component: NotFound,
+  },
 ];

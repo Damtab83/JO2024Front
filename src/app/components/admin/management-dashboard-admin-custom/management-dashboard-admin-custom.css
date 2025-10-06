@@ -1,0 +1,28 @@
+h1 {
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: underline;
+  text-align: center;
+  margin-bottom: 3vh;
+}
+
+h3 {
+  color: white;
+  text-align: left;
+}
+.user-container {
+  background-color: orange;
+  border: 3px solid grey;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px black;
+  width: 70%;
+  margin: auto;
+}
+p,
+ul,
+li {
+  margin: 3px;
+}
+li {
+  margin-left: 15px;
+}

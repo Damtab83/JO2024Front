@@ -1,0 +1,11 @@
+<h1>Historique client</h1>
+
+<div class="user-container">
+  <h3>Détails de l'utilisateur</h3>
+  <p *ngIf="user">Nom : {{ user.firstname }} {{ user.lastname }}</p>
+  <p *ngIf="user">Email : {{ user.email }}</p>
+  <p *ngIf="user">Billets :</p>
+  <ul *ngIf="user">
+    <li *ngFor="let ticket of user.tickets">{{ ticket.numero }} - {{ ticket.qrcode }}</li>
+  </ul>
+</div>

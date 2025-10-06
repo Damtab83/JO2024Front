@@ -1,0 +1,25 @@
+<h1>Bienvenue sur votre panneau d'administration</h1>
+
+<div class="admin-container">
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>Client</th>
+        <th>Email</th>
+        <th>Billet</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.id }}</td>
+        <td>
+          <a [routerLink]="['custom', user.id]">{{ user.firstname }} {{ user.lastname }}</a>
+        </td>
+        <td>{{ user.email }}</td>
+        <td *ngFor="let ticket of user.tickets">{{ ticket.numero }} {{ ticket.qrcode }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<router-outlet></router-outlet>
