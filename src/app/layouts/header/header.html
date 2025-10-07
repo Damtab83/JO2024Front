@@ -5,6 +5,12 @@
       <a mat-list-item routerLink="/achats">Achats</a>
       <a mat-list-item routerLink="/mentions-legales">Mentions Légales</a>
       <a mat-list-item routerLink="/cgv">CGV</a>
+      @if (!auth.isLoggedIn()) {
+      <a mat-list-item routerLink="/login">Connexion</a>
+      <a mat-list-item routerLink="/signin">Enregistrement</a>
+      } @else {
+      <a mat-list-item (click)="logout()">Déconnexion</a>
+      }
     </mat-nav-list>
   </mat-sidenav>
 
@@ -20,6 +26,12 @@
         <a mat-button routerLink="/achats">Achats</a>
         <a mat-button routerLink="/mentions-legales">Mentions Légales</a>
         <a mat-button routerLink="/cgv">CGV</a>
+        @if (!auth.isLoggedIn()) {
+        <a mat-button routerLink="/login">Connexion</a>
+        <a mat-button routerLink="/signin">Enregistrement</a>
+        } @else {
+        <a mat-button (click)="logout()">Déconnexion</a>
+        }
       </nav>
     </mat-toolbar>
 

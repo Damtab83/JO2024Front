@@ -12,6 +12,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { merge } from 'rxjs';
+import { AuthService } from '../../services/auth-service';
 
 @Component({
   selector: 'jo2024-login',
@@ -36,7 +37,7 @@ export class Login {
 
   errorMessage = signal('');
 
-  constructor() {
+  constructor(private auth: AuthService) {
     merge(this.form.controls.email.statusChanges, this.form.controls.email.valueChanges)
       .pipe(takeUntilDestroyed())
       .subscribe(() => this.updateErrorMessage());
@@ -61,6 +62,7 @@ export class Login {
 
   onSubmit() {
     if (this.form.valid) {
+      this.auth.login();
       console.log('✅ Connexion établie :', this.form.value);
     } else {
       console.warn('❌ Connexion invalide');

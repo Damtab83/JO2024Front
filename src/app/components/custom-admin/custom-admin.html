@@ -9,15 +9,18 @@
   </div>
   <div class="listing-ticket">
     <table>
-      <tr>
-        <th>Numéro</th>
-        <th>QRcode</th>
-      </tr>
-
-      <tr *ngFor="let ticket of tickets">
-        <td>{{ ticket.numero }}</td>
-        <td>{{ ticket.qrcode }}</td>
-      </tr>
+      <thead>
+        <tr>
+          <th>Numéro</th>
+          <th>QRcode</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ticket of tickets">
+          <td>{{ ticket.numero }}</td>
+          <td>{{ ticket.qrcode }}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
 </div>
