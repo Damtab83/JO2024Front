@@ -37,3 +37,5 @@ ng e2e
 ```
 
 Angular CLI ne comporte pas le framework de test end-to-end par défaut. Vous pouvez le choisir si vous le voulez.
+
+Vous pourrez trouver cette application en ligne à l'adresse : https://jo2024-project-bachelor.netlify.app/
