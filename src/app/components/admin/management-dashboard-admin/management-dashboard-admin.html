@@ -14,7 +14,9 @@
       <tr *ngFor="let user of users">
         <td>{{ user.id }}</td>
         <td>
-          <a [routerLink]="['custom', user.id]">{{ user.firstname }} {{ user.lastname }}</a>
+          <a [routerLink]="['/management-dashboard-admin/custom']" [queryParams]="{ id: user.id }"
+            >{{ user.firstname }} {{ user.lastname }}</a
+          >
         </td>
         <td>{{ user.email }}</td>
         <td *ngFor="let ticket of user.tickets">{{ ticket.numero }} {{ ticket.qrcode }}</td>

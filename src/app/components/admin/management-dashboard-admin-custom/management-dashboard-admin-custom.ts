@@ -10,8 +10,8 @@ import { ActivatedRoute } from '@angular/router';
   standalone: true,
 })
 export class ManagementDashboardAdminCustom {
-  route = inject(ActivatedRoute);
-  user: any;
+  private route = inject(ActivatedRoute);
+  user: any = null;
 
   users = [
     {
@@ -37,7 +37,9 @@ export class ManagementDashboardAdminCustom {
   ];
 
   ngOnInit() {
-    const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.user = this.users.find((u) => u.id === id);
+    this.route.queryParams.subscribe((params) => {
+      const id = Number(params['id']);
+      this.user = this.users.find((u) => u.id === id) || null;
+    });
   }
 }

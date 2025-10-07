@@ -23,7 +23,7 @@ export const routes: Routes = [
     component: ManagementDashboardAdmin,
     children: [
       {
-        path: 'custom/:id',
+        path: 'custom',
         component: ManagementDashboardAdminCustom,
         data: { renderMode: 'server' },
       },

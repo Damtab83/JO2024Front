@@ -4,6 +4,7 @@
 
 [build.environment]
   NETLIFY_USE_PRERENDER = "false"
+  NETLIFY_SKIP_PRERENDER = "true"
 
 # 🔄 Redirections pour Angular SPA
 [[redirects]]

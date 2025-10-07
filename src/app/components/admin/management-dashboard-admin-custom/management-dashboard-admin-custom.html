@@ -1,11 +1,14 @@
 <h1>Historique client</h1>
 
-<div class="user-container">
+<div class="user-container" *ngIf="user">
   <h3>Détails de l'utilisateur</h3>
-  <p *ngIf="user">Nom : {{ user.firstname }} {{ user.lastname }}</p>
-  <p *ngIf="user">Email : {{ user.email }}</p>
-  <p *ngIf="user">Billets :</p>
-  <ul *ngIf="user">
-    <li *ngFor="let ticket of user.tickets">{{ ticket.numero }} - {{ ticket.qrcode }}</li>
-  </ul>
+  <p><strong>Nom :</strong> {{ user.firstname }} {{ user.lastname }}</p>
+  <p><strong>Email :</strong> {{ user.email }}</p>
+
+  <div *ngIf="user.tickets?.length > 0">
+    <p><strong>Billets :</strong></p>
+    <ul>
+      <li *ngFor="let ticket of user.tickets">🎟️ {{ ticket.numero }} — {{ ticket.qrcode }}</li>
+    </ul>
+  </div>
 </div>
