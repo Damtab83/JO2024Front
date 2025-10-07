@@ -21,7 +21,13 @@ export const routes: Routes = [
   {
     path: 'management-dashboard-admin',
     component: ManagementDashboardAdmin,
-    children: [{ path: 'custom/:id', component: ManagementDashboardAdminCustom }],
+    children: [
+      {
+        path: 'custom/:id',
+        component: ManagementDashboardAdminCustom,
+        data: { renderMode: 'server' },
+      },
+    ],
   },
   { path: 'mentions-legales', component: MentionsLegales },
   {
