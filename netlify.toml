@@ -2,9 +2,8 @@
   command = "npm run build"
   publish = "dist/jo2024Front/browser"
 
-[context.production.environment]
+[build.environment]
   NETLIFY_USE_PRERENDER = "false"
-
 
 # 🔄 Redirections pour Angular SPA
 [[redirects]]
