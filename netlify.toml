@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "dist/jo2024Front/browser"
 
-[build.environment]
+[context.production.environment]
   NETLIFY_USE_PRERENDER = "false"
 
 
